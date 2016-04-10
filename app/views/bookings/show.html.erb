@@ -2,12 +2,12 @@
 
 <p>
   <strong>Customer:</strong>
-  <%= @booking.customer.full_name %>
+  <%= link_to(@booking.customer.full_name, @booking.customer) %>
 </p>
 
 <p>
   <strong>Cleaner:</strong>
-  <%= @booking.cleaner.full_name %>
+  <%= link_to(@booking.cleaner.full_name, @booking.cleaner) %>
 </p>
 
 <p>
