@@ -3,7 +3,7 @@ class Cleaner < ActiveRecord::Base
   has_and_belongs_to_many :cities
   has_many :bookings
 
-  before_validation :sanitize_email
+  before_validation :sanitize_email, if: :email
 
   validates :first_name, presence: true
   validates :last_name, presence: true
