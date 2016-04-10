@@ -24,5 +24,7 @@
   </ul>
 </p>
 
+<%= render 'bookings/list_links', bookings: @cleaner.bookings.order(:date) %>
+
 <%= link_to 'Edit', edit_cleaner_path(@cleaner) %> |
 <%= link_to 'Back', cleaners_path %>

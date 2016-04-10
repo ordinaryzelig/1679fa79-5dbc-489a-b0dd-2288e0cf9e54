@@ -1,5 +1,6 @@
 class Cleaner < ActiveRecord::Base
   has_and_belongs_to_many :cities
+  has_many :bookings
 
   validates :first_name, presence: true
   validates :last_name, presence: true
