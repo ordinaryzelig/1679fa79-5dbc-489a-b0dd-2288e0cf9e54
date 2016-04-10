@@ -16,6 +16,11 @@
 </p>
 
 <p>
+  <strong>Email:</strong>
+  <%= @cleaner.email %>
+</p>
+
+<p>
 <strong><%= pluralize(@cleaner.cities.size, 'City') %>:</strong>
   <ul>
     <% @cleaner.cities.each do |city| %>
