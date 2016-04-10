@@ -15,5 +15,14 @@
   <%= @cleaner.quality_score %>
 </p>
 
+<p>
+<strong><%= pluralize(@cleaner.cities.size, 'City') %>:</strong>
+  <ul>
+    <% @cleaner.cities.each do |city| %>
+      <li><%= link_to(city.name, city) %></li>
+    <% end %>
+  </ul>
+</p>
+
 <%= link_to 'Edit', edit_cleaner_path(@cleaner) %> |
 <%= link_to 'Back', cleaners_path %>

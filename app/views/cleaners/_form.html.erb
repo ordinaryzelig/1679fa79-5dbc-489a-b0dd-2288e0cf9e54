@@ -23,6 +23,10 @@
     <%= f.label :quality_score %><br>
     <%= f.text_field :quality_score %>
   </div>
+
+  <h3>Cities</h3>
+  <%= f.collection_check_boxes :city_ids, City.all, :id, :name %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
